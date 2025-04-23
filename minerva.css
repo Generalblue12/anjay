@@ -1,0 +1,83 @@
+
+        body {
+            background: linear-gradient(to right, #9fa8da, #f48fb1, #ffeb3b);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+        background: #333;
+        color: rgb(168, 65, 65);
+        padding: 20 px;
+        font-size: 24px;
+        font-weight: bold;
+        }
+        .header-logo {
+            width: 50px;
+            height: 50px;
+            margin: 0 20px;
+        }
+        footer {
+            background: #333;
+            color: rgb(38, 92, 119);
+            padding: 20 px;
+            font-size: 18spx;
+            font-weight: bold;
+            }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .carousel {
+            width: 400px;
+            text-align: center;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            color: white;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+            position: relative;
+        }
+        .slide {
+            display: none;
+            padding: 20px;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+            border-radius: 15px;
+        }
+        .active {
+            display: block;
+            opacity: 1;
+            transform: translateX(0);
+        }
+        button {
+            margin-top: 8px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background: #333;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: transform 0.6s ease;
+            transition-delay: 0.1s;
+
+        }
+        button:hover {
+            background: #000000;
+            transform: rotate(360deg) scale(1.1);
+            transition: transform 0.6s ease;
+        }
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+       
